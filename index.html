@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CUB</title>
+    <link rel="shortcut icon" href="./img/kub_lnxv3rdkwvrk.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container" style="padding-left: 0; padding-right: 0;">
+            <div class="header_inner d-none d-lg-flex">
+                <div class="header_logo">
+                    <a href="#intro">
+                        <img src="./logo/logo(green).png" alt="" class="header_logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <a href="#intro" class="nav_link">Главная</a>
+                    <a href="#cases" class="nav_link">Каталог проектов</a>
+                    <a href="#material" class="nav_link">Материалы</a>
+                    <a href="#contacts" class="nav_link">Контакты</a>
+                    <p class="nav_contacts">
+                        <a href="tel:+79107794086" class="contact_link_nav"> +7 (910) 779-40-86</a><br>
+                    </p>
+                </nav>
+            </div>
+            <div class="header_inner d-block d-lg-none">
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                    <div class="logo_header">
+                        <img src="./logo/logo(green).png" alt="" class="img_header" id="img_header">
+                    </div>
+                    <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item my-2">
+                            <a href="#intro" class="nav_link">
+                                <img src="./logo/logo(green).png" alt="" class="header_logo" >
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav_contacts">
+                                <a href="tel:+79107794086" class="contact_link_nav"> +7 (910) 779-40-86</a><br>
+                            </p>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="./index.html" class="nav_link" id="nav_link">Главная</a>
+                        </li>
+                        <li class="nav-item"  data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <a href="#cases" class="nav_link" id="nav_link">Каталог проектов</a>
+                        </li>
+                        <li class="nav-item"  data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <a href="#material" class="nav_link" id="nav_link">Материалы</a>
+                        </li>
+                        <li class="nav-item"  data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <a href="#contacts" class="nav_link" id="nav_link">Контакты</a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- INTRO -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro_inner">
+                    <div class="intro_main">
+                        <!-- <img src="./logo/logo_dash(black).png" alt="Логотип" height="75px" class="intro_logo"> -->
+                        <h3 class="intro_title">Готовый модульный DOM CUB</h3>
+                        <h4 class="intro_subtitle">с полной отделкой и коммуникациями в ипотеку от 4720 руб.</h4>
+                        <a class="btn text-uppercase btn_intro" type="button" href="#cases">Подобрать проект</a>
+                    </div>
+                    <!-- <div class="col d-flex justify-content-center align-items-center">
+                        <img src="./img/home-intro.png" alt="" class="img_intro">
+                    </div> -->             
+            </div>
+        </div>
+    </div>
+
+    <!-- ADVANTAGES -->
+    <!-- <div class="advantages">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 adv_item">
+                    <img src="./img/check_marker.png" alt="Галочка" class="check_marker">
+                    Установка за 30 дней
+                </div>
+                <div class="col-12 col-md-4 adv_item">
+                    <img src="./img/check_marker.png" alt="Галочка" class="check_marker">
+                    Дома для<br> круглогодичного<br>проживания
+                </div>
+                <div class="col-12 col-md-4 adv_item">
+                    <img src="./img/check_marker.png" alt="Галочка" class="check_marker">
+                    Возможность <br>рассрочки от банка или <br>ипотеки
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    
+    <!-- CASES -->
+    <div class="cases" id="cases">
+        <div class="container">
+            <div class="cases_header">
+                <h2 class="cases_title">Наши проекты</h2>
+            </div>
+            <div class="cases_row">
+                <div class="row first_row">
+                    <div class="col-12 col-lg one_cases w-100"  onclick="location.href='cases_page/nine_cases.html'">
+                        <div class="cases_content">
+                            <div class="content_title">
+                                <p class="card_title">CUB 12</p>
+                                <p class="card_subtitle">общая площадь 27 м<sup>2</sup></p>
+                            </div>
+                            <div class="content_descr">
+                                <p class="card_test">Цена со скидкой:</p>
+                                <p class="price">1 000 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg two_cases" onclick="location.href='cases_page/eight_cases.html'">
+                        <div class="cases_content">
+                            <div class="content_title">
+                                <p class="card_title">CUB 18</p>
+                                <p class="card_subtitle">общая площадь 27 м<sup>2</sup></p>
+                            </div>
+                            <div class="content_descr">
+                                <p class="card_test">Цена со скидкой:</p>
+                                <p class="price">1 540 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg three_cases" onclick="location.href='cases_page/seven_cases.html'">
+                        <div class="cases_content">
+                            <div class="content_title">
+                                <p class="card_title">CUB 24</p>
+                                <p class="card_subtitle">общая площадь 43 м<sup>2</sup></p>
+                            </div>
+                            <div class="content_descr">
+                                <p class="card_test">Цена со скидкой:</p>
+                                <p class="price">1 800 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row second_row" >
+                    <div class="col-12 col-lg  four_cases" onclick="location.href='cases_page/six_cases.html'">
+                        <div class="cases_content">
+                            <div class="content_title">
+                                <p class="card_title">CUB 29</p>
+                                <p class="card_subtitle">общая площадь 59 м<sup>2</sup></p>
+                            </div>
+                            <div class="content_descr">
+                                <p class="card_test">Цена со скидкой:</p>
+                                <p class="price">1 990 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg  five_cases" onclick="location.href='cases_page/five_cases.html'">
+                        <div class="cases_content">
+                            <div class="content_title">
+                                <p class="card_title">CUB 29С</p>
+                                <p class="card_subtitle">с отдельной спальней</p>
+                                <p class="card_subtitle">общая площадь 47 м<sup>2</sup></p>
+                            </div>
+                            <div class="content_descr">
+                                <p class="card_test">Цена со скидкой:</p>
+                                <p class="price">2 030 000 ₽</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg  six_cases" onclick="location.href='cases_page/four_cases.html'">
+                        <div class="cases_content">
+                            <div class="content_title">
+                                <p class="card_title">CUB 33</p>
+                                <p class="card_subtitle">общая площадь 53 м<sup>2</sup></p>
+                            </div>
+                            <div class="content_descr">
+                                <p class="card_test">Цена со скидкой:</p>
+                                <p class="price">2 310 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row three_row">
+                    <div class="col-12 col-lg  seven_cases" onclick="location.href='cases_page/three_cases.html'">
+                        <div class="cases_content">
+                            <div class="content_title">
+                                <p class="card_title">CUB 36</p>
+                                <p class="card_subtitle">общая площадь 60 м<sup>2</sup></p>
+                            </div>
+                            <div class="content_descr">
+                                <p class="card_test">Цена со скидкой:</p>
+                                <p class="price">2 520 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg eight_cases" onclick="location.href='cases_page/two_cases.html'">
+                        <div class="cases_content">
+                            <div class="content_title">
+                                <p class="card_title">CUB 46</p>
+                                <p class="card_subtitle">общая площадь 80 м<sup>2</sup></p>
+                            </div>
+                            <div class="content_descr">
+                                <p class="card_test">Цена со скидкой:</p>
+                                <p class="price">3 220 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg nine_cases" onclick="location.href='cases_page/one_cases.html'">
+                        <div class="cases_content">
+                            <div class="content_title">
+                                <p class="card_title">CUB 65</p>
+                                <p class="card_subtitle">общая площадь 100 м<sup>2</sup></p>
+                            </div>
+                            <div class="content_descr">
+                                <p class="card_test">Цена со скидкой:</p>
+                                <p class="price">4 550 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADDITIONAL SERVICES -->
+    <div class="services">
+        <div class="container">
+            <div class="services_header">
+                <h2 class="services_title">Дополнительные услуги</h2>
+            </div>
+            <div class="row services_content justify-content-end">
+                    <div class="col-12 col-xl-6 d-flex d-xl-block justify-content-center">
+                        <div class="services_img w-100">
+                            <div class="row services_text">
+                                <img src="./img/Vector.png" alt="Галочка" class="vector">
+                                Веранда (навес) от 20000 рублей
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 d-flex d-xl-block justify-content-center">
+                        <div class="services_sauna_img w-100">
+                            <div class="row services_text">
+                                <img src="./img/Vector.png" alt="Галочка" class="vector">
+                                Модульная SAUNA CUB
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEIGHT -->
+    <div class="height">
+        <div class="container">
+            <div class="height_main">
+                <div class="height_title">
+                    Растущий дом
+                </div>
+                <div class="height_text">
+                    Минималистичный дом с плоской кровлей, который со временем может расти с помощью добавления дополнительных модулей вбок и даже вверх, до двухэтажной версии.
+                    <br>
+                    <br>
+                    Большое количество планировок позволяет подобрать подходящий именно вам вариант.
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="about">
+        <div class="container">
+            <div class="about_header">
+                <h2 class="about_title">Преимущества модульного DOM CUB</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <div class="about_item col">
+                        <div class="about_item_img">
+                            <img src="./img/about/1.png" alt="" class="about_img">
+                        </div>
+                        <div class="about_item_text">
+                            <p class="about_item_title">Технология производства</p>
+                            Наша технология производства существует на рынке уже 50 лет
+                        </div>
+                    </div>
+                    <div class="about_item col py-2">
+                        <div class="about_item_img">
+                            <img src="./img/about/2.png" alt="" class="about_img">
+                        </div>
+                        <div class="about_item_text">
+                            <p class="about_item_title">Eco-friendly</p>
+                            Натуральные и экологичные материалы от бруса до отделки
+                        </div>
+                    </div>
+                    <div class="about_item col pt-1">
+                        <div class="about_item_img">
+                            <img src="./img/about/3.png" alt="" class="about_img">
+                        </div>
+                        <div class="about_item_text">
+                            <p class="about_item_title">Рассрочка</p>
+                            Возможность оформления рассрочки от банка или ипотеки
+                        </div>
+                    </div>
+                    <div class="about_item col">
+                        <div class="about_item_img">
+                            <img src="./img/about/4.png" alt="" class="about_img">
+                        </div>
+                        <div class="about_item_text">
+                            <p class="about_item_title">Гарантия</p>
+                            Действует гарантия от 5 лет по договору
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="about_item col">
+                        <div class="about_item_img">
+                            <img src="./img/about/5.png" alt="" class="about_img">
+                        </div>
+                        <div class="about_item_text">
+                            <p class="about_item_title">Заводское производство</p>
+                            Собственное производство и склад 1400 квадратных метров
+                        </div>
+                    </div>
+                    <div class="about_item col">
+                        <div class="about_item_img">
+                            <img src="./img/about/6.png" alt="" class="about_img">
+                        </div>
+                        <div class="about_item_text">
+                            <p class="about_item_title">Логистика</p>
+                            Мы имеем свою логистику и не привлекаем сторонние логистические компании
+                        </div>
+                    </div>
+                    <div class="about_item col">
+                        <div class="about_item_img">
+                            <img src="./img/about/7.png" alt="" class="about_img">
+                        </div>
+                        <div class="about_item_text">
+                            <p class="about_item_title">Долговечность дома</p>
+                            Долговечность – срок жизни дома не ограничен
+                        </div>
+                    </div>
+                    <div class="about_item col">
+                        <div class="about_item_img">
+                            <img src="./img/about/8.png" alt="" class="about_img">
+                        </div>
+                        <div class="about_item_text">
+                            <p class="about_item_title">Циркуляция воздуха</p>
+                            Настроенная циркуляция воздуха внутри дома
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- WHY CHOOSE US -->
+    <div class="choose">
+        <div class="container">
+            <div class="choose_header">
+                <h2 class="choose_title">Преимущества модульного DOM CUB</h2>
+            </div>
+            <div class="choose_row">
+                <div class="row row_first">
+                    <div class="col choose_img">
+                        <img src="img/choose/choose_img_one.png" alt="" class="">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="choose_item">
+                                <img src="./img/choose/1.png" alt="" class="choose_item_img">
+                                <div class="about_item_text col">
+                                    <p class="about_item_title">Без стройки</p>
+                                    Дома готовы к доставке и монтажу на вашем участке
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row choose_second">
+                            <div class="choose_item">
+                                <img src="./img/choose/2.png" alt="" class="choose_item_img">
+                                <div class="about_item_text col">
+                                    <p class="about_item_title">Любой сезон</p>
+                                    Дом рассчитан на комфортное использование в любое время года
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="choose_item">
+                                <img src="./img/choose/3.png" alt="" class="choose_item_img">
+                                <div class="about_item_text col">
+                                    <p class="about_item_title">Стиль и дизайн</p>
+                                    Современный скандинавский стиль и эргономичный дизайн
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row_second">
+                    <div class="col">
+                        <div class="row">
+                            <div class="choose_item">
+                                <img src="./img/choose/4.png" alt="" class="choose_item_img">
+                                <div class="about_item_text col">
+                                    <p class="about_item_title">Мобильность</p>
+                                    Модульная система позволяет переместить дом или добавить новые модул
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row choose_second">
+                            <div class="choose_item">
+                                <img src="./img/choose/5.png" alt="" class="choose_item_img">
+                                <div class="about_item_text col">
+                                    <p class="about_item_title">Вариативность</p>
+                                    Множество вариантов стандартных планировок с возможностью изменений
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="choose_item">
+                                <img src="./img/choose/6.png" alt="" class="choose_item_img">
+                                <div class="about_item_text col">
+                                    <p class="about_item_title">Гарантия</p>
+                                    Гарантия на каркас - 10 лет, на инженерию и отделочные материалы - 5 лет
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col choose_img">
+                        <img src="img/choose/choose_img_two.png" alt="" class="choose_item_img">
+                    </div>
+                </div>
+            </div>
+            <div class="choose_button">
+                <button class="btn text-uppercase btn_choose" type="button">Получить каталог</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MORTGAGE -->
+
+    <div class="container">
+        <div class="mortgage">
+            <div class="mortgage_main">
+                <div class="mortgage_title">
+                    Модульный дом в ипотеку
+                </div>
+                <div class="mortgage_price">
+                    от 4720 руб.
+                </div>
+                <div class="mortgage_subtitle">
+                    Платеж по ипотеки на 30 лет. Ипотека от 5,3%.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MATERIAL -->
+    <div class="material" id="material">
+        <div class="container">
+            <div class="material_header">
+                <h2 class="material_title">Материалы, которые мы используем</h2>
+            </div>
+            <div class="material_row">
+                <div class="row">
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 col-xs-12 my-2">
+                        <div class="material_item_img ">
+                            <img src="./img/material/1.png" alt="" class="material_img">
+                        </div>
+                        <div class="material_item_text">
+                            Каркас из сухой строганной доски 45*190 (145мм)
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="material_item_img ">
+                            <img src="./img/material/2.png" alt="" class="material_img">
+                        </div>
+                        <div class="material_item_text">
+                            Утепление стен – минеральная <br> вата в 2 слоя (150 мм)
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="material_item_img ">
+                            <img src="./img/material/3.png" alt="" class="material_img">
+                        </div>
+                        <div class="material_item_text">
+                            Утепление потолка и пола –
+                            минеральная вата в 3 слоя (200
+                            мм)
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="material_item_img ">
+                            <img src="./img/material/4.png" alt="" class="material_img">
+                        </div>
+                        <div class="material_item_text">
+                            Внешняя отделка стен досками
+                            дерева хвойных пород
+                            камерной сушки с защитным
+                            покрытием
+                        </div>
+                    </div>
+                </div>
+                <div class="row material_second_row">
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="material_item_img ">
+                            <img src="./img/material/5.png" alt="" class="material_img">
+                        </div>
+                        <div class="material_item_text">
+                            Кровля – двухслойная
+                            наплавляемая рулонная с
+                            верхним покрытием из сланца
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="material_item_img ">
+                            <img src="./img/material/12.png" alt="" class="material_img">
+                        </div>
+                        <div class="material_item_text">
+                            Инженерное наполнение –
+                            автоматика в электрощите
+                            Legrand (либо аналог),
+                            розеточные группы Schneider,
+                            греющий кабель на вводе воды
+                            в дом, наружное и внутреннее
+                            освещение, вентиляция –
+                            приточные клапаны.
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="material_item_img ">
+                            <img src="./img/material/7.png" alt="" class="material_img">
+                        </div>
+                        <div class="material_item_text">
+                            Отделка внутренних стен –
+                            имитация бруса (хвойные
+                            породы, сорт АБ, окраска белым
+                            лаком на водной основе)
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="material_item_img ">
+                            <img src="./img/material/8.png" alt="" class="material_img">
+                        </div>
+                        <div class="material_item_text">
+                            Пол – износостойкий ламинат
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="material_item_img ">
+                            <img src="./img/material/9.png" alt="" class="material_img">
+                        </div>
+                        <div class="material_item_text">
+                            Потолок – имитация бруса
+                            (хвойные породы, сорт АБ,
+                            окраска белым лаком на водной
+                            основе)
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="material_item_img ">
+                            <img src="./img/material/10.png" alt="" class="material_img">
+                        </div>
+                        <div class="material_item_text">
+                            Межкомнатные двери из
+                            отшлифованной фанеры с
+                            защитным покрытием разных
+                            цветов
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="material_item_img ">
+                            <img src="./img/material/11.png" alt="" class="material_img">
+                        </div>
+                        <div class="material_item_text">
+                            Окна и двери – двухкамерные
+                            стеклопакеты с мульти-
+                            функциональным стеклом с
+                            заполнением инертным газом
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="material_item_img ">
+                            <img src="./img/material/6.png" alt="" class="material_img">
+                        </div>
+                        <div class="material_item_text">
+                            На фасаде и кровле
+                            предусмотрено вентилируемое
+                            пространство, ветро-
+                            гидрозащитные мембраныт
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUIZ -->
+    <div data-marquiz-id="64741383e055c40025d13dcd"></div>
+<script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Inline', {id: '64741383e055c40025d13dcd', buttonText: 'Пройти тест', bgColor: '#00ff4d', textColor: '#363636', rounded: true, shadow: 'rgba(0, 255, 77, 0.5)', blicked: true, buttonOnMobile: true})</script>
+     <!-- SLIDER -->
+     <div class="slider">
+        <div class="container">
+            <div class="slider_header">
+                <h2 class="slider_title">Наши работы</h2>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="img-wrapper">
+                        <a href="img/slider/1.jpg" data-fancybox="gallery">
+                            <img src="img/slider_figma/1.png" class="d-block w-100 w-md-550 h-550 img_carousel" alt="...">
+                        </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-wrapper">
+                        <a href="img/slider/4.jpg" data-fancybox="gallery">
+                            <img src="img/slider_figma/4.png" class="d-block w-100 w-md-550 h-550 img_carousel" alt="...">
+                        </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-wrapper">
+                        <a href="img/slider/6.jpg" data-fancybox="gallery">
+                            <img src="img/slider_figma/6.png" class="d-block w-100 w-md-550 h-550 img_carousel" alt="...">
+                        </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="img-wrapper">
+                        <a href="img/slider/5.jpg" data-fancybox="gallery">
+                            <img src="img/slider_figma/5.png" class="d-block w-100 w-md-550 h-550 img_carousel" alt="...">
+                        </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-wrapper">
+                        <a href="img/slider/7.jpg" data-fancybox="gallery">
+                            <img src="img/slider_figma/7.png" class="d-block w-100 w-md-550 h-550 img_carousel" alt="...">
+                        </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-wrapper">
+                        <a href="img/slider/8.jpg" data-fancybox="gallery">
+                            <img src="img/slider_figma/8.png" class="d-block w-100 w-md-550 h-550 img_carousel" alt="...">
+                        </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-wrapper">
+                        <a href="img/slider/9.jpg" data-fancybox="gallery">
+                            <img src="img/slider_figma/9.png" class="d-block w-100 w-md-550 h-550 img_carousel" alt="...">
+                        </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-wrapper">
+                        <a href="img/slider/11.jpg" data-fancybox="gallery">
+                            <img src="img/slider_figma/11.png" class="d-block w-100 w-md-550 h-550 img_carousel" alt="...">
+                        </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-wrapper">
+                        <a href="img/slider/14.jpg" data-fancybox="gallery">
+                            <img src="img/slider_figma/14.png" class="d-block w-100 w-md-550 h-550 img_carousel" alt="...">
+                        </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-wrapper">
+                        <a href="img/slider/17.jpg" data-fancybox="gallery">
+                            <img src="img/slider_figma/17.png" class="d-block w-100 w-md-550 h-550 img_carousel" alt="...">
+                        </a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            <div class="slider_button">
+                <button class="btn text-uppercase btn_slider">Записаться</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACTS -->
+    <div class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts_header">
+                <h2 class="contacts_title">Свяжитесь с нами</h2>
+            </div>
+            <div class="contact_body">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 contact_row">
+                        <div class="row justify-content-center">
+                            <div class="col-12 contact_item">
+                                <div class="contact_item_img">
+                                    <a href="https://t.me/centrstroi33" target="_blank" class="contact_link">
+                                        <img src="./img/contact/Telegram.png" alt="" class="contact_img">
+                                    </a>
+                                </div>
+                                <div class="contact_item_text text-uppercase">
+                                    <a href="https://t.me/centrstroi33" target="_blank" class="contact_link">dom-cub</a>
+                                </div>
+                            </div>
+                            <div class="col-12 contact_item">
+                                <div class="contact_item_img">
+                                    <a href="https://vk.com/domcub" target="_blank" class="contact_link">
+                                        <img src="./img/contact/VK.png" alt="" class="contact_img">
+                                    </a>                                   
+                                </div>
+                                <div class="contact_item_text text-uppercase">
+                                    <a href="https://vk.com/domcub" target="_blank" class="contact_link">dom-cub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 contact_item">
+                                <div class="contact_item_img">
+                                    <img src="./img/contact/mail.png" alt="" class="contact_img">
+                                </div>
+                                <div class="contact_item_text">
+                                    <a href="mailto:info@dom-cub.ru?subject = Вопрос по строительству дома" target="_blank" class="contact_link">info@dom-cub.ru</a><br>
+                                    <a href="mailto:snab@dom-cub.ru?subject = Вопрос по строительству дома" target="_blank" class="contact_link">snab@dom-cub.ru</a>
+                                </div>
+                            </div>
+                            <div class="col-12 contact_item">
+                                <div class="contact_item_img">
+                                    <a href="https://instagram.com/domcub.ru?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="contact_link">
+                                        <img src="./img/contact/Instagram.png" alt="" class="contact_img">
+                                    </a>
+                                </div>
+                                <div class="contact_item_text text-uppercase">
+                                    <a href="https://instagram.com/domcub.ru?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="contact_link">dom-cub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 contact_item">
+                                <div class="contact_item_img">
+                                    <img src="./img/contact/1.png" alt="" class="contact_img_addres">
+                                </div>
+                                <div class="contact_item_text" style="width: 185px;">
+                                    Московская обл.,<br> 
+                                    Пресненская наб., 12<br>
+                                    <span class="addres_info">(только по предворительной записи)</span>
+                                </div>
+                            </div>
+                            <div class="col-12 contact_item">
+                                <div class="contact_item_img">
+                                    <img src="./img/contact/phone.png" alt="" class="contact_img">
+                                </div>
+                                <div class="contact_item_text ">
+                                    <a href="tel:+79107794086" target="_blank" class="contact_link">+7(910)779-40-86</a><br>
+                                    <a href="tel:+79939094086" target="_blank" class="contact_link">+7(993)909-40-86</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="polition">
+                    <a href="#" class="polition_link">Политика обработки персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A885e40d95a99504beb4811e71cd11309cdf50c2c3b50d6c77e2a64dc69ea25c7&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО ДЛЯ ЗАПИСИ НА ПРОСМОТР ДОМА-->
+    <div class="modal-wrapper">
+        <div class="head"></div>
+        <div class="modal">
+        <div class="content">
+            <div class="good-job">
+                <p class="modal_text">Оставьте контакты, и мы свяжемся с вами</p>
+                <form class="form_modal_window " action="">
+                <input type="phone" name="phone" id="phone" placeholder="Введите ваш телефон" required>
+                <input class="form_sub" name="submit" type="submit" value="Оставить заявку">
+                <div class="text text-center">
+                    Нажимая кнопку "Отправить", вы даете свое согласие на обработку своих персональных данных
+                </div>
+                </form>
+                <div id="erconts"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+      
+    <input type="hidden" class="thank_url" value="thank.html">
+
+    <!-- Marquiz script start -->
+<script>
+    (function(w, d, s, o){
+      var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+        if (document.readyState !== 'loading') Marquiz.init(o);
+        else document.addEventListener("DOMContentLoaded", function() {
+          Marquiz.init(o);
+        });
+      };
+      d.head.insertBefore(j, d.head.firstElementChild);
+    })(window, document, 'script', {
+        host: '//quiz.marquiz.ru',
+        region: 'eu',
+        id: '64741383e055c40025d13dcd',
+        autoOpen: false,
+        autoOpenFreq: 'once',
+        openOnExit: false,
+        disableOnMobile: false
+      }
+    );
+    </script>
+    <!-- Marquiz script end -->
+    <!-- CONNECTION SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(93806949, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/93806949" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</body>
+</html>
